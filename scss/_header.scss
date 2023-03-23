@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import "common";
+@import "fonts";
+@import "mixins";
+@import "variables";
+
+// Main Header
+
+.main-header {
+  padding-top: 16px;
+  .container {
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        max-width: calc((100% / 3));
+        display: flex;
+        align-items: center;
+        .logo-img {
+          margin-right: 10px;
+          width: 32px;
+          height: 44px;
+        }
+        .logo-txt {
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          /* or 133% */
+
+          letter-spacing: -0.4px;
+
+          /* Text/Heading */
+
+          color: #2d3958;
+        }
+      }
+      .nav-links {
+        max-width: calc((100% / 3));
+        display: flex;
+        align-items: center;
+        .link {
+          margin-right: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          a {
+            margin-bottom: 10px;
+            font-family: "Outfit";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            /* identical to box height, or 160% */
+
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
+
+            /* Text/Text */
+
+            color: #7b88a8;
+            text-transform: uppercase;
+          }
+          .active-icon {
+            visibility: hidden;
+          }
+          &:hover {
+            a {
+              color: #2d3958;
+            }
+            .active-icon {
+              visibility: visible;
+            }
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .utilities {
+        display: flex;
+        align-items: center;
+        max-width: calc((100% / 3));
+        .magnifying-glass {
+          margin-right: 20px;
+          cursor: pointer;
+        }
+        .shopping-cart-container {
+          margin-right: 30px;
+          position: relative;
+          height: 24px;
+          cursor: pointer;
+          .active-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+        .btn-signup {
+          padding: 12px 38px;
+          background: #886cff;
+          border-radius: 5px;
+          border: 1px solid #ffffff;
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          /* identical to box height, or 171% */
+          text-align: center;
+          letter-spacing: -0.3px;
+          text-transform: uppercase;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

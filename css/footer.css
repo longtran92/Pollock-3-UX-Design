@@ -1,0 +1,286 @@
+/* -----------------------------------------------------------
+	common
+----------------------------------------------------------- */
+body {
+  color: #1a202c;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr,
+br {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button,
+.btn {
+  transition: all 0.4s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.over {
+  transition: all 0.4s ease;
+}
+.over:hover {
+  opacity: 0.7;
+}
+
+.container {
+  min-width: 1170px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+.text-primary {
+  color: #2c5b90 !important;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.main-footer {
+  padding-top: 100px;
+  background-color: #292f3a;
+}
+.main-footer .footer-content .main-content {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.main-footer .footer-content .main-content .logo {
+  margin-right: 176px;
+  display: flex;
+  align-items: center;
+}
+.main-footer .footer-content .main-content .logo .logo-img {
+  margin-right: 10px;
+  width: 32px;
+  height: 44px;
+}
+.main-footer .footer-content .main-content .logo .logo-txt {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  letter-spacing: -0.4px;
+  /* Text/Heading */
+  color: #ffffff;
+}
+.main-footer .footer-content .main-content .navigation {
+  margin-right: 30px;
+  width: 170px;
+}
+.main-footer .footer-content .main-content .navigation .nav-heading {
+  margin-bottom: 20px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  letter-spacing: -1px;
+  /* Text/Text White */
+  color: #ffffff;
+}
+.main-footer .footer-content .main-content .navigation .nav-links li {
+  margin-bottom: 10px;
+}
+.main-footer .footer-content .main-content .navigation .nav-links li:last-child {
+  margin-bottom: 0;
+}
+.main-footer .footer-content .main-content .navigation .nav-links a {
+  text-transform: uppercase;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  /* Text/Text Gray */
+  color: #e7e5ea;
+}
+.main-footer .footer-content .main-content .newsletter {
+  width: 370px;
+}
+.main-footer .footer-content .main-content .newsletter .heading {
+  margin-bottom: 20px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  letter-spacing: -1px;
+  /* Text/Text White */
+  color: #ffffff;
+}
+.main-footer .footer-content .main-content .newsletter .subscribe-initiation {
+  margin-bottom: 25px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Text/Text Gray */
+  color: #e7e5ea;
+}
+.main-footer .footer-content .main-content .newsletter .subscribe {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.main-footer .footer-content .main-content .newsletter .subscribe input {
+  margin-right: 6px;
+  flex-grow: 1;
+  padding: 11px 0 11px 18px;
+  background: #e7e5ea;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  /* Text/Text */
+  color: #7b88a8;
+}
+.main-footer .footer-content .main-content .newsletter .subscribe .btn-submit {
+  padding: 12px 39px;
+  background: #886cff;
+  border-radius: 5px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.main-footer .footer-content .main-content .newsletter .no-spam {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: -0.3px;
+  /* Text/Text Gray */
+  color: #e7e5ea;
+}
+.main-footer .footer-content .sub-content {
+  padding: 27px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(123, 136, 168, 0.3);
+}
+.main-footer .footer-content .sub-content .copy-right {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  /* Text/Text Gray */
+  color: #e7e5ea;
+}
+.main-footer .footer-content .sub-content .social-media svg {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.main-footer .footer-content .sub-content .social-media svg:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=footer.css.map */

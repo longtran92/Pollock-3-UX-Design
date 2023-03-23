@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import "common";
+@import "fonts";
+@import "mixins";
+@import "variables";
+
+// MAIN FOOTER
+.main-footer {
+  padding-top: 100px;
+  background-color: #292f3a;
+  .footer-content {
+    .main-content {
+      margin-bottom: 100px;
+      display: flex;
+      align-items: flex-start;
+      .logo {
+        margin-right: 176px;
+        display: flex;
+        align-items: center;
+        .logo-img {
+          margin-right: 10px;
+          width: 32px;
+          height: 44px;
+        }
+        .logo-txt {
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          /* or 133% */
+
+          letter-spacing: -0.4px;
+
+          /* Text/Heading */
+
+          color: #ffffff;
+        }
+      }
+      .navigation {
+        margin-right: 30px;
+        width: 170px;
+        .nav-heading {
+          margin-bottom: 20px;
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 32px;
+          /* identical to box height, or 145% */
+          letter-spacing: -1px;
+          /* Text/Text White */
+          color: #ffffff;
+        }
+        .nav-links {
+          li {
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+          a {
+            text-transform: uppercase;
+            font-family: "Outfit";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
+
+            /* Text/Text Gray */
+
+            color: #e7e5ea;
+          }
+        }
+      }
+      .newsletter {
+        width: 370px;
+        .heading {
+          margin-bottom: 20px;
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 32px;
+          /* identical to box height, or 145% */
+
+          letter-spacing: -1px;
+
+          /* Text/Text White */
+
+          color: #ffffff;
+        }
+        .subscribe-initiation {
+          margin-bottom: 25px;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          /* or 162% */
+          /* Text/Text Gray */
+          color: #e7e5ea;
+        }
+        .subscribe {
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          input {
+            margin-right: 6px;
+            flex-grow: 1;
+            padding: 11px 0 11px 18px;
+            background: #e7e5ea;
+            border-radius: 5px;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            /* identical to box height, or 162% */
+
+            /* Text/Text */
+
+            color: #7b88a8;
+          }
+          .btn-submit {
+            padding: 12px 39px;
+            background: #886cff;
+            border-radius: 5px;
+            font-family: "Outfit";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+            text-align: center;
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
+
+            color: #ffffff;
+            cursor: pointer;
+          }
+        }
+        .no-spam {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          /* or 171% */
+
+          letter-spacing: -0.3px;
+
+          /* Text/Text Gray */
+
+          color: #e7e5ea;
+        }
+      }
+    }
+    .sub-content {
+      padding: 27px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(123, 136, 168, 0.3);
+      .copy-right {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+        /* Text/Text Gray */
+        color: #e7e5ea;
+      }
+      .social-media {
+        svg {
+          margin-right: 20px;
+          cursor: pointer;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
